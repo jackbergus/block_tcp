@@ -3,7 +3,9 @@
 			    <giacomo90@libero.it>
 
 This software blocks the tcp in/out-going packets given some textual files where 
-you could point out wich URLs or IP you want to block.
+you could point out wich URLs or IP you want to block. The program will search
+in the cwd for blockedip.txt or blockedurl.txt or both, where to place the 
+IPs or URLs to ban. 
 
 	Required libraries:
 	
