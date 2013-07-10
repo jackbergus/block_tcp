@@ -1,0 +1,32 @@
+
+			Block_Tcp by Giacomo Bergami
+			    <giacomo90@libero.it>
+
+This software blocks the tcp in/out-going packets given some textual files where 
+you could point out wich URLs or IP you want to block.
+
+	Required libraries:
+	
+		libnetfilter_queue-dev >= 0.0.17
+		libnfnetlink-dev >= 0.0.17
+
+	Installing procedure:
+	
+		autoreconf -if
+		./configure
+		make
+		sudo make install-all
+	
+	Starting procedure:
+		
+		sudo start_btcp
+		sudo stop_btcp 
+		
+		The last command is important in order to remove the iptables 
+		rules
+	
+	Removing procedure:
+		
+		sudo make remove-all
+	
+	
